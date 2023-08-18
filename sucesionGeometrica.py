@@ -10,9 +10,9 @@ def mensaje_bienvenida():
     print("╚═══════════════════════════════════╝")
 
 def caja_bonita(string):
-    box_width = max(len(string) + 4, 40)  # Ensure a minimum box width of 40 characters
+    box_width = max(len(string) + 4, 40)  
     horizontal_border = "═" * box_width
-    padding = (box_width - len(string) - 2) // 2  # Calculate padding for the sides
+    padding = (box_width - len(string) - 2) // 2  
     empty_line = f"║{' ' * padding}{string}{' ' * padding}  ║"
 
     print(f"╔{horizontal_border}╗")
